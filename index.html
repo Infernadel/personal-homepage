@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio — Iqbal Muhammad Firmansyah</title>
+  <meta name="description" content="Portofolio pribadi Iqbal Muhammad Firmansyah, mahasiswa Teknik Informatika Universitas Sam Ratulangi Manado.">
+
+  <script>
+    (function () {
+      const storageKey = 'portfolio-theme';
+      const savedTheme = localStorage.getItem(storageKey) || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      document.documentElement.style.colorScheme = savedTheme;
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <header class="site-header" data-include="includes/header.html">
+    <script>
+      (function () {
+        const cacheKey = 'include:includes/header.html';
+        const cached = sessionStorage.getItem(cacheKey);
+        const host = document.currentScript && document.currentScript.parentElement;
+
+        if (cached && host) host.innerHTML = cached;
+      })();
+    </script>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+
+        <section class="hero reveal">
+          <span class="sticker sticker--hero" aria-hidden="true">
+            <img class="sticker__img" src="images/stickers/cloud.svg" alt="">
+          </span>
+          <span class="sticker sticker--hero-2" aria-hidden="true">
+            <img class="sticker__img" src="images/stickers/sparkles.svg" alt="">
+          </span>
+          <p class="hero__greeting">Halo, perkenalkan saya</p>
+          <h1 class="hero__name">Iqbal Muhammad<br>Firmansyah</h1>
+          <p class="hero__tagline">
+            Mahasiswa Teknik Informatika Universitas Sam Ratulangi Manado
+          </p>
+          <div class="hero__tags">
+            <span class="badge">UI/UX Design</span>
+            <span class="badge">Web Development</span>
+            <span class="badge">Machine Learning</span>
+          </div>
+        </section>
+
+        <div class="stamp-grid reveal">
+          <div class="stamp">UI</div>
+          <div class="stamp">UX</div>
+          <div class="stamp">WEB</div>
+          <div class="stamp">ML</div>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <span class="marquee__item"><img src="images/stickers/cherry-blossom.svg" alt=""> Cinnamoroll Enthusiast</span>
+            <span class="marquee__item">★</span>
+            <span class="marquee__item"><img src="images/stickers/cloud.svg" alt=""> Teknik Informatika</span>
+            <span class="marquee__item">✦</span>
+            <span class="marquee__item"><img src="images/stickers/pawprint.svg" alt=""> UI/UX · Web · ML</span>
+            <span class="marquee__item">☆</span>
+            <span class="marquee__item"><img src="images/stickers/growing-heart.svg" alt=""> Unsrat Manado</span>
+            <span class="marquee__item">✧</span>
+            <span class="marquee__item"><img src="images/stickers/lollipop.svg" alt=""> Portofolio 2026</span>
+            <span class="marquee__item">★</span>
+            <span class="marquee__item"><img src="images/stickers/bow.svg" alt=""> Made With ♡</span>
+            <span class="marquee__item">✦</span>
+            <span class="marquee__item"><img src="images/stickers/cherry-blossom.svg" alt=""> Cinnamoroll Enthusiast</span>
+            <span class="marquee__item">★</span>
+            <span class="marquee__item"><img src="images/stickers/cloud.svg" alt=""> Teknik Informatika</span>
+            <span class="marquee__item">✦</span>
+            <span class="marquee__item"><img src="images/stickers/pawprint.svg" alt=""> UI/UX · Web · ML</span>
+            <span class="marquee__item">☆</span>
+            <span class="marquee__item"><img src="images/stickers/growing-heart.svg" alt=""> Unsrat Manado</span>
+            <span class="marquee__item">✧</span>
+            <span class="marquee__item"><img src="images/stickers/lollipop.svg" alt=""> Portofolio 2026</span>
+            <span class="marquee__item">★</span>
+            <span class="marquee__item"><img src="images/stickers/bow.svg" alt=""> Made With ♡</span>
+            <span class="marquee__item">✦</span>
+          </div>
+        </div>
+
+        <div class="scrapbook-divider" aria-hidden="true"></div>
+
+        <section class="section paper-section reveal">
+          <span class="sticker sticker--section" aria-hidden="true">
+            <img class="sticker__img" src="images/stickers/swirl.svg" alt="">
+          </span>
+          <span class="sticker sticker--float-1" aria-hidden="true">
+            <img class="sticker__img sticker__img--sm" src="images/stickers/cherry-blossom.svg" alt="">
+          </span>
+          <h2 class="section__title">Tentang Saya</h2>
+          <p class="section__subtitle">
+            Saya tertarik di bidang UI/UX Design, pengembangan web, dan machine learning.
+            Website ini dibuat sebagai tugas mata kuliah
+            <strong>Pemrograman Web (TIK2032)</strong>,
+            dibangun menggunakan HTML5 murni tanpa library atau framework apapun.
+          </p>
+        </section>
+
+        <div class="scrapbook-divider" aria-hidden="true"></div>
+
+        <section class="section paper-section">
+          <span class="sticker sticker--section-2" aria-hidden="true">
+            <img class="sticker__img" src="images/stickers/cloud.svg" alt="">
+          </span>
+          <h2 class="section__title reveal">Keahlian &amp; Minat</h2>
+          <p class="section__subtitle reveal">Bidang teknis yang sedang saya pelajari dan kembangkan.</p>
+
+          <div class="skills-grid reveal-group">
+
+            <div class="skill-card">
+              <svg class="skill-card__icon" aria-hidden="true" focusable="false">
+                <use href="images/icons/sprite.svg#icon-ui-ux"></use>
+              </svg>
+              <div class="skill-card__title">UI/UX Design</div>
+              <ul>
+                <li>Desain antarmuka pengguna</li>
+                <li>Penelitian user experience</li>
+                <li>Prototipe interaktif</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <svg class="skill-card__icon" aria-hidden="true" focusable="false">
+                <use href="images/icons/sprite.svg#icon-web"></use>
+              </svg>
+              <div class="skill-card__title">Web Development</div>
+              <ul>
+                <li>HTML5, CSS3, JS</li>
+                <li>Website multi-halaman</li>
+                <li>Struktur semantik HTML5</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <svg class="skill-card__icon" aria-hidden="true" focusable="false">
+                <use href="images/icons/sprite.svg#icon-ml"></use>
+              </svg>
+              <div class="skill-card__title">Machine Learning</div>
+              <ul>
+                <li>Python untuk data science</li>
+                <li>Preprocessing &amp; analisis data</li>
+                <li>Training &amp; evaluasi model</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <div class="scrapbook-divider" aria-hidden="true"></div>
+
+        <section class="section paper-section">
+          <span class="sticker sticker--section-3" aria-hidden="true">
+            <img class="sticker__img" src="images/stickers/star.svg" alt="">
+          </span>
+          <span class="sticker sticker--float-2" aria-hidden="true">
+            <img class="sticker__img sticker__img--sm" src="images/stickers/bow.svg" alt="">
+          </span>
+          <h2 class="section__title reveal">Proyek Terkini</h2>
+          <p class="section__subtitle reveal">Beberapa proyek yang sedang dan telah saya kerjakan.</p>
+
+          <ol class="projects-list reveal-group">
+
+          <li class="project-card">
+            <div class="project-card__body">
+              <div class="project-card__title">Website Portofolio</div>
+              <p class="project-card__desc">
+                Website multi-halaman menggunakan pure HTML5 sebagai tugas mata kuliah Pemrograman Web (TIK2032). Dilengkapi CSS dan JavaScript modern.
+              </p>
+            </div>
+          </li>
+
+          <li class="project-card">
+            <div class="project-card__body">
+              <div class="project-card__title">Prediksi Depresi dengan Regresi Logistik</div>
+              <p class="project-card__desc">
+                Webapp Streamlit untuk memprediksi risiko depresi menggunakan dataset Kaggle dengan algoritma logistic regression.
+              </p>
+            </div>
+          </li>
+
+          <li class="project-card">
+            <div class="project-card__body">
+              <div class="project-card__title">Design UI Website FaunaKita</div>
+              <p class="project-card__desc">
+                Desain antarmuka website untuk platform informasi dan katalog fauna endemik Indonesia.
+              </p>
+            </div>
+          </li>
+
+          </ol>
+        </section>
+
+        <div class="scrapbook-divider" aria-hidden="true"></div>
+
+        <section class="section paper-section reveal">
+          <span class="sticker sticker--section-4" aria-hidden="true">
+            <img class="sticker__img" src="images/stickers/sparkles.svg" alt="">
+          </span>
+          <span class="sticker sticker--float-3" aria-hidden="true">
+            <img class="sticker__img sticker__img--sm" src="images/stickers/lollipop.svg" alt="">
+          </span>
+          <h2 class="section__title">Jelajahi Website</h2>
+          <div class="skills-grid" style="margin-top: var(--space-4);">
+
+          <a href="gallery.html" style="text-decoration: none;">
+            <div class="skill-card">
+              <svg class="skill-card__icon" aria-hidden="true" focusable="false">
+                <use href="images/icons/sprite.svg#icon-gallery"></use>
+              </svg>
+              <div class="skill-card__title">Gallery</div>
+              <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin: 0;">
+                Kumpulan foto proyek dan kegiatan kampus.
+              </p>
+            </div>
+          </a>
+
+          <a href="blog.html" style="text-decoration: none;">
+            <div class="skill-card">
+              <svg class="skill-card__icon" aria-hidden="true" focusable="false">
+                <use href="images/icons/sprite.svg#icon-blog"></use>
+              </svg>
+              <div class="skill-card__title">Blog</div>
+              <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin: 0;">
+                Artikel seputar teknologi yang saya pelajari.
+              </p>
+            </div>
+          </a>
+
+          <a href="contact.html" style="text-decoration: none;">
+            <div class="skill-card">
+              <svg class="skill-card__icon" aria-hidden="true" focusable="false">
+                <use href="images/icons/sprite.svg#icon-contact"></use>
+              </svg>
+              <div class="skill-card__title">Contact</div>
+              <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin: 0;">
+                Kirim pesan atau lihat info kontak saya.
+              </p>
+            </div>
+          </a>
+
+          </div>
+        </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" data-include="includes/footer.html"></footer>
+
+  <script src="js/core.js"></script>
+
+</body>
+</html>

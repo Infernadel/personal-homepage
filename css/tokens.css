@@ -1,0 +1,112 @@
+@layer tokens, base, layout, components;
+
+@layer tokens {
+
+  :root {
+   --color-primary:       #79b7ff;
+   --color-primary-dark:  #4f8ed6;
+   --color-primary-light: color-mix(in srgb, #79b7ff 18%, var(--color-surface));
+   --color-primary-glow:  color-mix(in srgb, #79b7ff 26%, transparent);
+
+   --color-accent:      #f7b6d2;
+   --color-accent-dark: #d98baa;
+
+   --color-text:        #2d2b2f;
+   --color-text-muted:  #6a6472;
+   --color-text-subtle: #9a92a3;
+
+   --color-bg:        #fbf7f2;
+   --color-surface:   #fffaf5;
+   --color-surface-2: #f3ece3;
+   --color-border:    #e6ddcf;
+   --color-cloud:     #ffffff;
+   --color-star:      #ffe8f1;
+
+   --font-display: 'Baloo 2', 'Trebuchet MS', sans-serif;
+   --font-body:    'Nunito', 'Segoe UI', system-ui, sans-serif;
+    --font-mono:    'Courier New', Courier, monospace;
+
+    --text-xs:   clamp(0.75rem,  0.7rem  + 0.22vw, 0.875rem);
+    --text-sm:   clamp(0.875rem, 0.82rem + 0.28vw, 1rem);
+    --text-base: clamp(1rem,     0.96rem + 0.22vw, 1.0625rem);
+    --text-md:   clamp(1.125rem, 1rem    + 0.5vw,  1.25rem);
+    --text-lg:   clamp(1.25rem,  1.1rem  + 0.65vw, 1.5rem);
+    --text-xl:   clamp(1.5rem,   1.25rem + 1vw,    2rem);
+    --text-2xl:  clamp(1.875rem, 1.5rem  + 1.5vw,  2.5rem);
+    --text-3xl:  clamp(2.25rem,  1.75rem + 2vw,    3.5rem);
+
+    --space-1:  0.25rem;
+    --space-2:  0.5rem;
+    --space-3:  0.75rem;
+    --space-4:  1rem;
+    --space-5:  1.25rem;
+    --space-6:  1.5rem;
+    --space-8:  2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+
+    --max-width:      860px;
+    --max-width-wide: 1100px;
+
+    --radius-sm:   4px;
+    --radius-md:   8px;
+    --radius-lg:   14px;
+    --radius-xl:   22px;
+    --radius-full: 9999px;
+
+   --shadow-sm:    0 1px 3px rgba(121,183,255,0.08), 0 1px 2px rgba(0,0,0,0.04);
+   --shadow-md:    0 6px 18px rgba(121,183,255,0.14), 0 2px 6px rgba(0,0,0,0.05);
+   --shadow-lg:    0 14px 44px rgba(121,183,255,0.18), 0 4px 16px rgba(0,0,0,0.07);
+    --shadow-focus: 0 0 0 3px var(--color-primary-glow);
+      --bg-gradient:
+         radial-gradient(1100px 520px at 12% -10%, color-mix(in srgb, var(--color-primary) 18%, transparent), transparent 60%),
+         radial-gradient(900px 520px at 110% 0%, color-mix(in srgb, var(--color-accent) 16%, transparent), transparent 58%),
+         linear-gradient(180deg, #fffdf9 0%, var(--color-bg) 72%);
+      --bg-dots:
+         radial-gradient(circle, color-mix(in srgb, var(--color-accent) 12%, transparent) 1px, transparent 1px);
+
+   --duration-fast:   220ms;
+   --duration-normal: 420ms;
+   --duration-slow:   820ms;
+    --ease-out:        cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in-out:     cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-spring:     cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --z-nav:   100;
+    --z-modal: 200;
+    --z-toast: 300;
+  }
+
+  [data-theme="dark"] {
+      --color-primary:       #9ad1ff;
+      --color-primary-dark:  #6aaef0;
+      --color-primary-light: color-mix(in srgb, #9ad1ff 12%, var(--color-surface));
+      --color-primary-glow:  color-mix(in srgb, #9ad1ff 20%, transparent);
+
+      --color-accent:      #c0b7ff;
+      --color-accent-dark: #9c91ea;
+
+      --color-text:        #e9eef7;
+      --color-text-muted:  #a1abc1;
+      --color-text-subtle: #78839d;
+
+      --color-bg:        #101322;
+      --color-surface:   #14192b;
+      --color-surface-2: #1b2136;
+      --color-border:    #2a334d;
+      --color-cloud:     #1a2238;
+      --color-star:      #3b4662;
+
+      --shadow-sm: 0 2px 6px rgba(8,12,24,0.52);
+      --shadow-md: 0 8px 22px rgba(8,12,24,0.62);
+      --shadow-lg: 0 16px 44px rgba(8,12,24,0.72);
+
+      --bg-gradient:
+         radial-gradient(900px 520px at 10% -15%, color-mix(in srgb, #9ad1ff 10%, transparent), transparent 60%),
+         linear-gradient(180deg, #0e1222 0%, #12192d 55%, #151d33 100%);
+      --bg-dots:
+         radial-gradient(circle, color-mix(in srgb, #c0b7ff 10%, transparent) 1px, transparent 1px);
+  }
+}

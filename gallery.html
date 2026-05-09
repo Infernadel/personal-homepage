@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Portofolio Iqbal</title>
+  <meta name="description" content="Gallery foto proyek dan kegiatan kampus Iqbal Muhammad Firmansyah.">
+
+  <script>
+    (function () {
+      const storageKey = 'portfolio-theme';
+      const savedTheme = localStorage.getItem(storageKey) || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      document.documentElement.style.colorScheme = savedTheme;
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <header class="site-header" data-include="includes/header.html">
+    <script>
+      (function () {
+        const cacheKey = 'include:includes/header.html';
+        const cached = sessionStorage.getItem(cacheKey);
+        const host = document.currentScript && document.currentScript.parentElement;
+
+        if (cached && host) host.innerHTML = cached;
+      })();
+    </script>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+
+      <div class="page-header paper-section reveal">
+        <span class="sticker sticker--section" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/cloud.svg" alt="">
+        </span>
+        <span class="sticker sticker--float-1" aria-hidden="true">
+          <img class="sticker__img sticker__img--sm" src="images/stickers/pawprint.svg" alt="">
+        </span>
+        <h2>Gallery</h2>
+        <p>Kumpulan foto proyek dan kehidupan kampus.</p>
+      </div>
+
+      <div class="scrapbook-divider" aria-hidden="true"></div>
+
+      <section class="gallery-section paper-section">
+        <span class="sticker sticker--section-2" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/sparkles.svg" alt="">
+        </span>
+        <span class="sticker sticker--float-3" aria-hidden="true">
+          <img class="sticker__img sticker__img--sm" src="images/stickers/cherry-blossom.svg" alt="">
+        </span>
+        <h3 class="section__title reveal">Proyek &amp; Riset</h3>
+
+        <div class="gallery-grid reveal-group">
+
+          <div class="gallery-item"
+               data-src="images/gallery/faunakita - uiux.png"
+               data-title="Design UI/UX FaunaKita"
+               data-desc="Pengerjaan desain antarmuka pengguna dan pengalaman pengguna untuk website FaunaKita, website katalog satwa endemik Indonesia.">
+
+            <div class="gallery-item__img">
+              <img
+                src="images/gallery/faunakita - uiux.png"
+                alt="Tampilan desain UI/UX FaunaKita"
+                width="300" height="170"
+                loading="lazy">
+              <div class="gallery-item__overlay" aria-hidden="true">
+                <svg aria-hidden="true" focusable="false">
+                  <use href="images/icons/sprite.svg#icon-zoom-in"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="gallery-item__caption">
+              <strong>Design UI/UX FaunaKita</strong>
+              <p>Desain antarmuka untuk website katalog satwa endemik Indonesia.</p>
+            </div>
+
+          </div>
+
+          <div class="gallery-item"
+               data-src="images/gallery/depression-prediction.png"
+               data-title="Depression Prediction — Streamlit"
+               data-desc="Pembuatan webapp untuk memprediksi risiko depresi berdasarkan data Kaggle dengan algoritma logistic regression menggunakan framework Streamlit.">
+
+            <div class="gallery-item__img">
+              <img
+                src="images/gallery/depression-prediction.png"
+                alt="Webapp Streamlit untuk prediksi depresi"
+                width="300" height="170"
+                loading="lazy">
+              <div class="gallery-item__overlay" aria-hidden="true">
+                <svg aria-hidden="true" focusable="false">
+                  <use href="images/icons/sprite.svg#icon-zoom-in"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="gallery-item__caption">
+              <strong>Depression Prediction — Streamlit</strong>
+              <p>Webapp prediksi risiko depresi dengan algoritma regresi logistik.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <div class="scrapbook-divider" aria-hidden="true"></div>
+
+      <section class="gallery-section paper-section">
+        <span class="sticker sticker--section-3" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/star.svg" alt="">
+        </span>
+        <span class="sticker sticker--float-2" aria-hidden="true">
+          <img class="sticker__img sticker__img--sm" src="images/stickers/bow.svg" alt="">
+        </span>
+        <h3 class="section__title reveal">Kehidupan Kampus &amp; Komunitas</h3>
+
+        <div class="gallery-grid reveal-group">
+
+          <div class="gallery-item"
+               data-src="images/gallery/techofest-unity-2025.JPG"
+               data-title="TechoFest Unity 2025"
+               data-desc="Event teknologi tahunan yang diselenggarakan oleh UKM Unity Fatek Unsrat.">
+
+            <div class="gallery-item__img">
+              <img
+                src="images/gallery/techofest-unity-2025.JPG"
+                alt="TechoFest Unity 2025"
+                width="300" height="200"
+                loading="lazy">
+              <div class="gallery-item__overlay" aria-hidden="true">
+                <svg aria-hidden="true" focusable="false">
+                  <use href="images/icons/sprite.svg#icon-zoom-in"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="gallery-item__caption">
+              <strong>TechoFest Unity 2025</strong>
+              <p>Event teknologi tahunan UKM Unity Fatek Unsrat.</p>
+            </div>
+
+          </div>
+
+          <div class="gallery-item"
+               data-src="images/gallery/prak-tbd.jpeg"
+               data-title="Hari Terakhir Praktikum TBD"
+               data-desc="Foto bersama di hari terakhir praktikum Teknik Basis Data (TBD) semester 3 bersama teman-teman seangkatan dan para asisten dosen.">
+
+            <div class="gallery-item__img">
+              <img
+                src="images/gallery/prak-tbd.jpeg"
+                alt="Hari terakhir praktikum TBD"
+                width="300" height="200"
+                loading="lazy">
+              <div class="gallery-item__overlay" aria-hidden="true">
+                <svg aria-hidden="true" focusable="false">
+                  <use href="images/icons/sprite.svg#icon-zoom-in"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="gallery-item__caption">
+              <strong>Hari Terakhir Praktikum TBD</strong>
+              <p>Foto bersama di akhir praktikum Teknik Basis Data semester 3.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Foto diperbesar">
+    <button class="lightbox__close" aria-label="Tutup">
+      <svg aria-hidden="true" focusable="false">
+        <use href="images/icons/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <img class="lightbox__img" src="" alt="">
+    <div class="lightbox__body">
+      <h3 class="lightbox__title"></h3>
+      <p class="lightbox__desc"></p>
+    </div>
+  </dialog>
+
+  <footer class="site-footer" data-include="includes/footer.html"></footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/gallery.js"></script>
+
+</body>
+</html>

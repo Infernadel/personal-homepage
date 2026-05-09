@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Portofolio Iqbal</title>
+  <meta name="description" content="Artikel dan catatan seputar teknologi oleh Iqbal Muhammad Firmansyah.">
+
+  <script>
+    (function () {
+      const storageKey = 'portfolio-theme';
+      const savedTheme = localStorage.getItem(storageKey) || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      document.documentElement.style.colorScheme = savedTheme;
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <header class="site-header" data-include="includes/header.html">
+    <script>
+      (function () {
+        const cacheKey = 'include:includes/header.html';
+        const cached = sessionStorage.getItem(cacheKey);
+        const host = document.currentScript && document.currentScript.parentElement;
+
+        if (cached && host) host.innerHTML = cached;
+      })();
+    </script>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+
+      <div class="page-header paper-section reveal">
+        <span class="sticker sticker--section" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/sparkles.svg" alt="">
+        </span>
+        <span class="sticker sticker--float-1" aria-hidden="true">
+          <img class="sticker__img sticker__img--sm" src="images/stickers/lollipop.svg" alt="">
+        </span>
+        <h2>Blog</h2>
+        <p>Kumpulan artikel dan catatan seputar teknologi yang saya pelajari dan minati.</p>
+      </div>
+
+      <div class="scrapbook-divider" aria-hidden="true"></div>
+
+      <nav class="toc paper-section reveal" aria-label="Daftar artikel">
+        <span class="sticker sticker--section-2" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/cloud.svg" alt="">
+        </span>
+        <p class="toc__label">Daftar Artikel</p>
+        <ul class="toc__list">
+          <li>
+            <a href="#artikel1" class="toc__link">Dasar UI/UX untuk Produk Digital</a>
+          </li>
+          <li>
+            <a href="#artikel2" class="toc__link">Mengenal HTML5: Standar Web Modern</a>
+          </li>
+          <li>
+            <a href="#artikel3" class="toc__link">Apa Itu Machine Learning dan Tahapannya</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="scrapbook-divider" aria-hidden="true"></div>
+
+      <article id="artikel1" class="article paper-section reveal">
+        <span class="sticker sticker--section-3" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/star.svg" alt="">
+        </span>
+        <span class="sticker sticker--float-3" aria-hidden="true">
+          <img class="sticker__img sticker__img--sm" src="images/stickers/growing-heart.svg" alt="">
+        </span>
+
+        <div class="article__number">01</div>
+        <h3 class="article__title">Dasar UI/UX untuk Produk Digital</h3>
+        <p class="article__meta">Ditulis oleh Iqbal &mdash; 29 Maret 2026</p>
+
+        <p>
+          <strong>UI/UX</strong> adalah fondasi penting dalam pengembangan produk digital.
+          UI berfokus pada tampilan antarmuka, sedangkan UX berfokus pada pengalaman
+          pengguna saat berinteraksi dengan produk.
+        </p>
+
+        <h4>Peran UI dan UX</h4>
+        <p>
+          UI yang baik membantu pengguna memahami elemen visual seperti tombol, warna,
+          dan tipografi. UX yang baik memastikan alur penggunaan terasa jelas, efisien,
+          dan nyaman dari awal hingga tujuan pengguna tercapai.
+        </p>
+
+        <h4>Prinsip Dasar UI/UX</h4>
+        <p>
+          Beberapa prinsip penting adalah konsistensi desain, hierarki visual yang jelas,
+          navigasi sederhana, serta feedback yang cepat saat pengguna melakukan aksi.
+          Prinsip-prinsip ini membuat produk lebih mudah dipelajari dan digunakan.
+        </p>
+        <p>
+          Dalam proses desain, saya biasanya memulai dari memahami kebutuhan pengguna,
+          membuat wireframe sederhana, lalu mengembangkan prototipe sebelum implementasi
+          final agar solusi yang dibangun lebih tepat sasaran.
+        </p>
+
+        <a href="#top" class="article__back">
+          <svg width="14" height="14" aria-hidden="true" focusable="false">
+            <use href="images/icons/sprite.svg#icon-arrow-up"></use>
+          </svg>
+          Kembali ke atas
+        </a>
+
+      </article>
+
+      <div class="scrapbook-divider" aria-hidden="true"></div>
+
+      <article id="artikel2" class="article paper-section reveal">
+        <span class="sticker sticker--section-4" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/swirl.svg" alt="">
+        </span>
+
+        <div class="article__number">02</div>
+        <h3 class="article__title">Mengenal HTML5: Standar Web Modern</h3>
+        <p class="article__meta">Ditulis oleh Iqbal &mdash; 29 Maret 2026</p>
+
+        <p>
+          <strong>HTML5</strong> adalah standar modern untuk membangun struktur halaman web.
+          HTML5 bekerja bersama CSS dan JavaScript untuk menghasilkan website yang semantik,
+          responsif, dan mudah diakses.
+        </p>
+
+        <h4>Kenapa HTML5 Penting</h4>
+        <p>
+          Dengan HTML5, struktur konten menjadi lebih jelas melalui elemen seperti
+          <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+          <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, dan <code>&lt;footer&gt;</code>.
+          Ini membantu mesin pencari dan pembaca layar memahami isi halaman dengan lebih baik.
+        </p>
+
+        <h4>Praktik Dasar yang Saya Gunakan</h4>
+        <p>
+          Saya membangun halaman dengan struktur sederhana, pemisahan konten yang rapi,
+          dan navigasi yang konsisten antar halaman. Pendekatan ini memudahkan pengembangan
+          lanjutan saat website mulai bertambah kompleks.
+        </p>
+        <p>
+          Selain itu, penggunaan HTML yang bersih juga mempermudah proses styling
+          dan pemeliharaan kode dalam jangka panjang.
+        </p>
+
+        <a href="#top" class="article__back">
+          <svg width="14" height="14" aria-hidden="true" focusable="false">
+            <use href="images/icons/sprite.svg#icon-arrow-up"></use>
+          </svg>
+          Kembali ke atas
+        </a>
+
+      </article>
+
+      <div class="scrapbook-divider" aria-hidden="true"></div>
+
+      <article id="artikel3" class="article paper-section reveal">
+        <span class="sticker sticker--section" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/sparkles.svg" alt="">
+        </span>
+
+        <div class="article__number">03</div>
+        <h3 class="article__title">Apa Itu Machine Learning dan Tahapannya</h3>
+        <p class="article__meta">Ditulis oleh Iqbal &mdash; 29 Maret 2026</p>
+
+        <p>
+          <strong>Machine learning</strong> adalah cabang kecerdasan buatan yang memungkinkan
+          komputer belajar dari data untuk mengenali pola, lalu membuat prediksi atau keputusan
+          tanpa diprogram secara rinci untuk setiap kasus.
+        </p>
+
+        <h4>Kenapa Machine Learning Penting</h4>
+        <p>
+          Machine learning digunakan dalam banyak bidang, seperti rekomendasi produk,
+          deteksi spam, prediksi permintaan, kesehatan, dan analisis perilaku pengguna.
+          Nilai utamanya adalah kemampuan mengolah data besar secara cepat dan menemukan
+          pola yang sulit dilihat secara manual.
+        </p>
+
+        <h4>Tahapan Umum Machine Learning</h4>
+        <p>
+          Tahapan umumnya dimulai dari memahami masalah, mengumpulkan data, membersihkan
+          dan menyiapkan data, membagi data latih dan data uji, memilih serta melatih model,
+          lalu mengevaluasi hasil model dengan metrik yang sesuai.
+        </p>
+        <p>
+          Setelah model memiliki performa yang cukup baik, tahap berikutnya adalah deployment
+          dan monitoring agar model tetap relevan saat data di dunia nyata berubah dari waktu
+          ke waktu.
+        </p>
+
+        <a href="#top" class="article__back">
+          <svg width="14" height="14" aria-hidden="true" focusable="false">
+            <use href="images/icons/sprite.svg#icon-arrow-up"></use>
+          </svg>
+          Kembali ke atas
+        </a>
+
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" data-include="includes/footer.html"></footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/blog.js"></script>
+
+</body>
+</html>

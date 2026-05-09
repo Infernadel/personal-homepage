@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Portofolio Iqbal</title>
+  <meta name="description" content="Hubungi Iqbal Muhammad Firmansyah untuk kolaborasi atau pertanyaan.">
+
+  <script>
+    (function () {
+      const storageKey = 'portfolio-theme';
+      const savedTheme = localStorage.getItem(storageKey) || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      document.documentElement.style.colorScheme = savedTheme;
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <header class="site-header" data-include="includes/header.html">
+    <script>
+      (function () {
+        const cacheKey = 'include:includes/header.html';
+        const cached = sessionStorage.getItem(cacheKey);
+        const host = document.currentScript && document.currentScript.parentElement;
+
+        if (cached && host) host.innerHTML = cached;
+      })();
+    </script>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+
+      <div class="page-header paper-section reveal">
+        <span class="sticker sticker--section" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/sparkles.svg" alt="">
+        </span>
+        <span class="sticker sticker--float-1" aria-hidden="true">
+          <img class="sticker__img sticker__img--sm" src="images/stickers/cherry-blossom.svg" alt="">
+        </span>
+        <h2>Contact</h2>
+        <p>Silakan hubungi saya untuk pertanyaan, kolaborasi, atau sekadar saling kenal.</p>
+      </div>
+
+      <div class="scrapbook-divider" aria-hidden="true"></div>
+
+      <section class="section paper-section reveal">
+        <span class="sticker sticker--section-2" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/cloud.svg" alt="">
+        </span>
+        <h3 class="section__title">Informasi Kontak</h3>
+
+        <div class="contact-info">
+
+          <div class="contact-info__item">
+            <svg aria-hidden="true" focusable="false">
+              <use href="images/icons/sprite.svg#icon-mail"></use>
+            </svg>
+            <a href="mailto:iqbalfirmansyah026@student.unsrat.ac.id">
+              iqbalfirmansyah026@student.unsrat.ac.id
+            </a>
+          </div>
+
+          <div class="contact-info__item">
+            <svg aria-hidden="true" focusable="false">
+              <use href="images/icons/sprite.svg#icon-github"></use>
+            </svg>
+            <a href="https://github.com/Infernadel" target="_blank" rel="noopener">
+              github.com/Infernadel
+            </a>
+          </div>
+
+          <div class="contact-info__item">
+            <svg aria-hidden="true" focusable="false">
+              <use href="images/icons/sprite.svg#icon-location"></use>
+            </svg>
+            <span>Manado, Sulawesi Utara, Indonesia</span>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="scrapbook-divider" aria-hidden="true"></div>
+
+      <section class="section paper-section reveal">
+        <span class="sticker sticker--section-3" aria-hidden="true">
+          <img class="sticker__img" src="images/stickers/star.svg" alt="">
+        </span>
+        <span class="sticker sticker--float-2" aria-hidden="true">
+          <img class="sticker__img sticker__img--sm" src="images/stickers/growing-heart.svg" alt="">
+        </span>
+        <h3 class="section__title">Kirim Pesan</h3>
+        <p style="margin-bottom: var(--space-6); color: var(--color-text-muted); font-size: var(--text-sm);">
+          Isi form di bawah ini. Semua field wajib diisi.
+        </p>
+
+        <form id="contact-form" novalidate>
+
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              class="form-input"
+              placeholder="Nama lengkap kamu"
+              autocomplete="name"
+              required>
+            <span class="form-hint" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="email@contoh.com"
+              autocomplete="email"
+              required>
+            <span class="form-hint" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea
+              id="pesan"
+              name="pesan"
+              class="form-textarea"
+              placeholder="Tulis pesanmu di sini..."
+              required></textarea>
+            <span class="form-hint" aria-live="polite"></span>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">
+              <svg width="16" height="16" aria-hidden="true" focusable="false">
+                <use href="images/icons/sprite.svg#icon-send"></use>
+              </svg>
+              Kirim Pesan
+            </button>
+            <button type="reset" class="btn btn--ghost">
+              Reset Form
+            </button>
+          </div>
+
+        </form>
+
+        <div id="form-success" class="form-success" role="status" aria-live="polite">
+          <svg aria-hidden="true" focusable="false">
+            <use href="images/icons/sprite.svg#icon-check"></use>
+          </svg>
+          <h3>Pesan Terkirim!</h3>
+          <p>Terima kasih sudah menghubungi saya. Saya akan membalas secepatnya.</p>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" data-include="includes/footer.html"></footer>
+
+  <script src="js/core.js"></script>
+
+</body>
+</html>
